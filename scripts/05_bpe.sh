@@ -12,7 +12,7 @@
 #The maximum walltime of the job is one day
 #SBATCH -t 48:00:00
 
-#SBATCH --mem=80G
+#SBATCH --mem=16G
 
 BASE_PATH=$HOME
 
