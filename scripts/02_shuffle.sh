@@ -14,4 +14,4 @@
 
 #SBATCH --mem=10G
 
-paste raw-all.{et,en} | shuf > shuffled_data.both
+paste data.{et, en} | shuf > shuffled_data.both
