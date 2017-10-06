@@ -5,7 +5,7 @@ MaLi team:
 
 
 ## Our project board:
-![Alt text](https://owncloud.ut.ee/owncloud/index.php/s/Vsdc5IaE5foUcFb "project board A")
+![Project board](/reports/Screenshot_pba_01?raw=true "project board A")
 
 ## This milestone tasks description:
 ### Corpus Preparation
