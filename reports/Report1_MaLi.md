@@ -5,7 +5,7 @@ MaLi team:
 
 
 ## Our project board:
-![Project board](/reports/Screenshot_pba_01?raw=true "project board A")
+![Project board](/reports/Screenshot_pba_01.PNG?raw=true "project board A")
 
 ## This milestone tasks description:
 ### Corpus Preparation
