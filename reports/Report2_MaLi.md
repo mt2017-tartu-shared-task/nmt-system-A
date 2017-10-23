@@ -4,7 +4,7 @@ MaLi team:
  * mariellee (https://github.com/mariellee)
 
 ### Our project board
--
+![Project board](/reports/Screenshot_pba_02.PNG?raw=true "project board A")
 
 ### Analyse the Translations
 ##### Sentences
