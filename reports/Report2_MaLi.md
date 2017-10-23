@@ -303,12 +303,13 @@ Due to incorrect BPE splitting we see 'sheep' instead of 'lights'.
 
 
 ### Conclusion
-1. Some sentences from dev set were taken from physics and the current translation system did not train on physics sentences, so we get some inappropriate translations, like "black mass" instead of "dark matter"
-2. Compound words often are translated incorrectly.
-3. There are a lot of translations with incorrect grammar tense.
-4. Abbreviations are translated sometimes incorrectly.
-5. Coverage Deviation Penalty (CDP) correlates with BLEU score better than other metrics (something wrong with Absentmindedness Penalties for output, it equales 100% for all sentences).
-5. There are mistakes in human translations (see Sentence 40: in original sentence only month is mentioned whereas in human translation data is used).
+1. We get BLEU score: 28.42
+2. Some sentences from dev set were taken from physics and the current translation system did not train on physics sentences, so we get some inappropriate translations, like "black mass" instead of "dark matter"
+3. Compound words often are translated incorrectly.
+4. There are a lot of translations with incorrect grammar tense.
+5. Abbreviations are translated sometimes incorrectly.
+6. Coverage Deviation Penalty (CDP) correlates with BLEU score better than other metrics (something wrong with Absentmindedness Penalties for output, it equales 100% for all sentences).
+7. There are mistakes in human translations (see Sentence 40: in original sentence only month is mentioned whereas in human translation data is used).
 
 
 
