@@ -1,4 +1,15 @@
-# Error Analysis
+# Milestone 2: Hand in the error analysis of the baseline translation [Report]
+MaLi team:
+ * adfors (https://github.com/adfors)
+ * mariellee (https://github.com/mariellee)
+
+### Our project board
+-
+
+### Analyse the Translations
+##### Sentences
+The error categories used below are based on the following classification: https://docs.google.com/presentation/d/e/2PACX-1vRFpbRvnmJHG2WKJU2xFUhEbH-QzwIexS8b24YzZFfIhdpQhZhyBE-F6U4ekSXUxkv7OL5hwobLmApq/pub?start=false#slide=id.g26d9cdc382_0_255
+
 ###### Sentence 1
 1. ID: 801
 2. *nad seetõttu postuleerivad nähtamatu musta massi olemasolu, mis on vastastikmõjus muu mateeriaga ainult selle gravitatsiooni kaudu, ja sisaldab väga stabiilseid, seega ka väga kergeid osakesi.*
@@ -278,6 +289,12 @@
 3. *on 22 October, the EU will also publish the first-ever European development report.*
 4. *the EU will also make public the first European progress report on time.*
 5. (1)  Missing words, content words: the month 'October' is missing
+
+###### Conclusion
+
+
+### Analyse attentions
+
 
 
 
