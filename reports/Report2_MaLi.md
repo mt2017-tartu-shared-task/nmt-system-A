@@ -290,6 +290,9 @@ The error categories used below are based on the following classification: https
 4. *The EU will also make public the first European progress report on time.*
 5. (1)  Missing words, content words: the month 'October' is missing
 
+##### Conclusion
+Most of the translation errors are incorrect words regarding the sense. Many words are wrongly translated into words that do not make any sense in the current context. In some cases estoninan expressions are translated word by word into an english expression which does not make sense as well. In addition lots of the translated words do not appear in the correct form, for instance plural instead of singular or wrong verb tenses. Furthermore content words are missing in many sentences. On the one hand there are whole expressions missing and on the other hand just single words which are important for the sense of the sentences. On the contrary extra words appear, just like a sentence contains one word twice instead of once. Just a few mistakes occur regarding unknown words, missing filler words or word order. 
+
 
 ### Analyse of attention weights
 ![Visualisation of translation](/reports/alignments_1508780497336.png?raw=true "Wrong BPE splitting")
