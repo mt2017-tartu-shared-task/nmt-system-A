@@ -26,7 +26,7 @@ We had several errors regarding the syntax or word order. The example below make
 
 Back translation could improve the quality/fluency of our translation by fixing this kind of problem. Back translation is an automatic translation of a monolingual target text. In our case we want to look for another english corpus to get more data and "back translate" this on into estonian. Afterwards the translation should be mixed up with the existing human-translation of the estonian corpus. One advantage would be that there are no changes to our neural network architecture are needed, it is easily appliable. 
 
-##### Replace CPE with "wordpieces" (Deadline: )
+##### Replace BPE with "wordpieces" (Deadline: 2.12.)
 The translation analysis shows that there are a few errors regarding BPE splitting. The estonian word "lampidest" in the following example has been faslc translated to sheep because of subword "lamp". 
 
 1. ID: 530
@@ -36,7 +36,7 @@ The translation analysis shows that there are a few errors regarding BPE splitti
 
 To fix this problem we want to try another splitting algorithm. Therefore we picked "wordpiece", which is a variant of BPE. The final vocabulary size is fixed. 
 
-##### Hyperparameters - Beam Search (Deadline: )
+##### Hyperparameters - Beam Search (Deadline: 20.11.)
 We want to make changes to the hyperparameters as well. In the following example "inconvenience" was translated to "work", which does not make sense in this context.  
 
 1. ID: 182
@@ -46,7 +46,7 @@ We want to make changes to the hyperparameters as well. In the following example
 
 Changing beam search size from 5 to 10 could help to find more appropriate words. The reason for that is, that a size of 10 could involve "5 more candidates" which are still close to the "candidate" with the most score and a translation which might be better. 
 
-##### Transformer model (Deadline: )
+##### Transformer model (Deadline: 10.11.)
 The transfromer model replaces recurrent layers with entirely self-attention. Each word will compared to every other word in the sentence. This allows finding dependencies between distant positions. In our case, we had a problem regarding genders. The model might help to get correct gender (like he or she) directly from the context. It could also fix the word-by-word translation problem shown below (black mass). Another advantage would be that it requires less time to train. 
 
 1. ID: 801
