@@ -90,7 +90,7 @@ traders may operate horizontally or vertically, either horizontally or individua
 each type of energy supply.
 * Machine_2: Energy purchasing, production, distribution, transfer, distribution, distribution and distribution
 of energy supplies may operate in a horizontal or vertically integrated type of energy supply.
-* Outline: The new translation is worser compared to the translation of the baseline method.
+* Outline: The new translation is worse compared to the translation of the baseline method.
 
 ### Next improvements:
 - Replace dots by “dots”
