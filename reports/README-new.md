@@ -41,7 +41,7 @@ More details: [Report 1](https://github.com/mt2017-tartu-shared-task/nmt-system-
 
     Baseline: Four.
 
-    Res: All words missed after the dot mark.
+    Res: All words are missed after the dot mark.
 
 
 More details: [Report 2](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report2_MaLi.md)
