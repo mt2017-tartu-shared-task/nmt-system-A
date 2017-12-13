@@ -23,6 +23,8 @@ More details: [Report 1](https://github.com/mt2017-tartu-shared-task/nmt-system-
 - Our main observation was that __there were several errors regarding sense of words, missing parts and incorrect forms__.
 - Take a look at our examples produced by baseline system:
 
+    __The first example:__
+
     Source: Ungaris leiti, et peaaegu 96% lampidest on ohtlikud.
 
     Human: In Hungary, nearly 96% of the __lights__ were found to be hazardous.
@@ -31,6 +33,7 @@ More details: [Report 1](https://github.com/mt2017-tartu-shared-task/nmt-system-
 
     Res: As we can see, we got sheep instead of lights.
 
+    __The second example:__
 
     Source: 4.otsustamine, millal midagi vaadata ja mida vaadata.
 
@@ -75,7 +78,7 @@ More details: [Report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-
     New model: 4. decide when to look at something and watch what.
 
 
-- As a result you can see that __the final system better understood the sense of words__.
+- As a result you can see that __the final system better understood the sense of words and translated the whole sentence not only the part of it__.
 
 Do not forget to check our poster: [__POSTER_LINK__]
 
@@ -87,9 +90,9 @@ We also wanted to try back translation to improve quality and fluency of the tra
 
 
 ## Final words
-- __1st_sentence: your_results_on_the_test_set_and_interpretation_(feel_later)__
+- New translation looks better and more interpretable than the translation with the baseline model.
 - The main difficulties: a huge queue to HPC machines, sometimes human translation was not correct (see example in report 2)
-- We have built our models by using sockeye and OpenNMT-py, we used with BPE and wordsegmentation splitting, we used Moses scripts, so we learnt many new things.
+- We have built our models by using sockeye and OpenNMT-py, we used with BPE and wordsegmentation splitting, we used Moses scripts, so we learned a lot of new things.
 
 
 ## Team members:
