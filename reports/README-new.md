@@ -53,7 +53,9 @@ More details: [Report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-
 - Generally speaking, __the system seems to got better. Looking at different sentences, fluency and sense has been improved and some missing words has been replaced.__
 - Lets now look at how our examples looks with our final system:
 
-    Original: Ungaris leiti, et peaaegu 96% lampidest on ohtlikud.
+    __The first example:__
+
+    Source: Ungaris leiti, et peaaegu 96% lampidest on ohtlikud.
 
     Human: In Hungary, nearly 96% of the _lights_ were found to be hazardous.
 
@@ -62,6 +64,7 @@ More details: [Report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-
     New model: In Hungary, almost 96% of the _lamps_ were found to be dangerous.,
 
 
+    __The second example:__
 
     Source: 4.otsustamine, millal midagi vaadata ja mida vaadata.
 
