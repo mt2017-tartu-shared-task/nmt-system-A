@@ -48,14 +48,14 @@ More details: [Report 2](https://github.com/mt2017-tartu-shared-task/nmt-system-
 
 ## Final systems
 - In order to address translation issues found after our manual evaluation we __used sockeye implementation of Transformer model to reduce sense errors, different sizes of beam search to find more appropriate words,  and replaced dot marks by special symbol to keep words after dot in the middle of sentence__.
-- At the end we have two models: with BPE splitting and wordpieces splitting. The model with BPE shows better BLEU than the model with wordpieces. Perhaps this is due to the number of splitting (70000 for BPE and 50000 for wordpieces).
-- The best trained system gave us __26.88__ BLEU points on the shared dev set that means __SIGNIFICANT INCREASE__ over the baseline.
+- At the end we have two models: with BPE splitting and SentencePieces splitting. The model with BPE shows better BLEU than the model with sentencepieces. Perhaps this is due to the number of splitting (70000 for BPE and 50000 for SentencePieces).
+- The best trained system gave us __26.88__ BLEU points on the shared dev set that means significant increase over the baseline.
 
 More details: [Report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report3_MaLi.md), [Report 4](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report4_MaLi.md)
 
 ## Final system manual evaluation
 - Generally speaking, __the system seems to got better. Looking at different sentences, fluency and sense has been improved and some missing words has been replaced.__
-- Lets now look at how our examples looks with the final system with wordpieces:
+- Lets now look at how our examples looks with the final systems:
 
     __The first example:__
 
@@ -65,8 +65,9 @@ More details: [Report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-
 
     Baseline: In Hungary, almost 96% of _sheep_ were found to be dangerous.
 
-    New model: In Hungary, almost 96% of the _lamps_ were found to be dangerous.,
+    Model with SentencePiece: In Hungary, almost 96% of the _lamps_ were found to be dangerous.
 
+    Model with BPE: In Hungary, almost 96% of _sheep_ were found to be dangerous.
 
     __The second example:__
 
@@ -76,10 +77,12 @@ More details: [Report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-
 
     Baseline: Four.
 
-    New model: 4. decide when to look at something and watch what.
+    Model with SentencePiece: 4. decide when to look at something and watch what.
+
+    Model with BPE: Deciding when to look at something and look at.
 
 
-- As a result you can see that __the final system better understood the sense of words and translated the whole sentence not only the part of it__.
+- As a result you can see that __the final system with sentencepieces better understood the sense of words; both systems translated the whole sentence not only the part of it__.
 
 Do not forget to check our poster: [__POSTER_LINK__]
 
@@ -89,9 +92,9 @@ We also wanted to try back translation to improve quality and fluency of the tra
 
 
 ## Final words
-- New translation looks better and more interpretable than the translation with the baseline model.
+- New translations look better and more interpretable than the translation with the baseline model.
 - The main difficulties: a huge queue to HPC machines, sometimes human translation was not correct (see example in [Report 2](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report2_MaLi.md))
-- We have built our models by using sockeye and OpenNMT-py, we used with BPE and wordsegmentation splitting, we used Moses scripts, so we learned a lot of new things.
+- We have built our models by using sockeye and OpenNMT-py, we used with BPE and sentencepiece splitting, we used Moses scripts, so we learned a lot of new things.
 
 
 ## Team members:
