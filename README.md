@@ -46,15 +46,16 @@ More details: [Report 1](https://github.com/mt2017-tartu-shared-task/nmt-system-
 
 More details: [Report 2](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report2_MaLi.md)
 
-## Final system
-- In order to address translation issues found after our manual evaluation we __used sockeye implementation of Transformer model to reduce sense errors, different sizes of beam search to find more appropriate words, replaced BPE with wordpieces to avoid splitting errors and replaced dot marks by special symbol to keep words after dot in the middle of sentence__.
-- The trained system gave us __26.88__ BLEU points on the shared dev set that means __SIGNIFICANT INCREASE__ over the baseline.
+## Final systems
+- In order to address translation issues found after our manual evaluation we __used sockeye implementation of Transformer model to reduce sense errors, different sizes of beam search to find more appropriate words,  and replaced dot marks by special symbol to keep words after dot in the middle of sentence__.
+- At the end we have two models: with BPE splitting and wordpieces splitting. The model with BPE shows better BLEU than the model with wordpieces. Perhaps this is due to the number of splitting (70000 for BPE and 50000 for wordpieces).
+- The best trained system gave us __26.88__ BLEU points on the shared dev set that means __SIGNIFICANT INCREASE__ over the baseline.
 
 More details: [Report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report3_MaLi.md), [Report 4](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report4_MaLi.md)
 
 ## Final system manual evaluation
 - Generally speaking, __the system seems to got better. Looking at different sentences, fluency and sense has been improved and some missing words has been replaced.__
-- Lets now look at how our examples looks with our final system:
+- Lets now look at how our examples looks with the final system with wordpieces:
 
     __The first example:__
 
