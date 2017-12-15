@@ -14,7 +14,7 @@ Sections below summarize key milestones we went through.
 
 ##  Baseline system
 - Our baseline system was the default OpenNMT-py model, which consists of a 2-layer LSTM with 500 hidden units on both the encoder/decoder.
-- As a result, we got __28.42__ BLEU points on the shared dev set.
+- As a result, we got __23.40__ BLEU points on the shared dev set.
 
 More details: [Report 1](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report1_MaLi.md)
 
@@ -48,7 +48,7 @@ More details: [Report 2](https://github.com/mt2017-tartu-shared-task/nmt-system-
 
 ## Final system
 - In order to address translation issues found after our manual evaluation we __used sockeye implementation of Transformer model to reduce sense errors, different sizes of beam search to find more appropriate words, replaced BPE with wordpieces to avoid splitting errors and replaced dot marks by special symbol to keep words after dot in the middle of sentence__.
-- The trained system gave us __YOUR_BLEU_ON_ACCURAT(!!!)DEV_SET__ BLEU points on the shared dev set that means __SMALL/BIG/ZERO INCREASE__ over the baseline.
+- The trained system gave us __26.88__ BLEU points on the shared dev set that means __SIGNIFICANT INCREASE__ over the baseline.
 
 More details: [Report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report3_MaLi.md), [Report 4](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report4_MaLi.md)
 
@@ -83,15 +83,13 @@ More details: [Report 3](https://github.com/mt2017-tartu-shared-task/nmt-system-
 Do not forget to check our poster: [__POSTER_LINK__]
 
 ## What we also tried or wanted to try
-*Describe_what_you successfully tried but did not include in the final system for any (technical/other reason)
-Include concrete __bleu results/manual evaluation results__ if you have them (use one sentence here or leave it empty)*
 
 We also wanted to try back translation to improve quality and fluency of the translation. This was not possible because of schedule reasons. Also, we wanted to run model with larger number of wordsegments, but we did not have powerful enough servers (our machines) and it was the huge line to HPC machines.
 
 
 ## Final words
 - New translation looks better and more interpretable than the translation with the baseline model.
-- The main difficulties: a huge queue to HPC machines, sometimes human translation was not correct (see example in report 2)
+- The main difficulties: a huge queue to HPC machines, sometimes human translation was not correct (see example in [Report 2](https://github.com/mt2017-tartu-shared-task/nmt-system-A/blob/master/reports/Report2_MaLi.md))
 - We have built our models by using sockeye and OpenNMT-py, we used with BPE and wordsegmentation splitting, we used Moses scripts, so we learned a lot of new things.
 
 
